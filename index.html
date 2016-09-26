@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>百搭屋</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="gmu/css/calendars.css" type="text/css">
+    <link rel="stylesheet" href="css/index.css" type="text/css"/>
+</head>
+<body>
+<div class="container">
+    <!--图片轮播-->
+    <div id="picsImg" class="swiper-container" >
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <a href="#" ><img src="img/banner1.jpg"/></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#" ><img src="img/banner2.jpg"/></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#" ><img src="img/banner3.jpg"/></a>
+            </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+    </div>
+    <section class="content">
+        <ul>
+            <!--位置-->
+            <li class="place">
+                <div>
+                    <label>入住地</label>
+                    <span id="city_name"></span>
+                    <input type="hidden" id="city_id">
+                    <a href="html/city.html"></a>
+                </div>
+                <p>
+                    我的位置
+                </p>
+            </li>
+            <!--入住日期-->
+            <li>
+                <label for="date_in">入住日</label>
+                <input type="text" id="date_in" readOnly>
+                <em></em>
+            </li>
+            <!--离店日期-->
+            <li>
+                <label for="date_out">离店日</label>
+                <input type="text" id="date_out" readOnly>
+                <em></em>
+            </li>
+            <!--酒店名-->
+            <li>
+                <label for="name">酒店名</label>
+                <input type="text" id="name" placeholder="酒店名称(选填)">
+            </li>
+        </ul>
+    </section>
+    <footer class="foot">
+        <a href="" id="search">搜索酒店</a>
+    </footer>
+</div>
+<script src="js/zepto.min.js" type="text/javascript"></script>
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script src="js/event.js" type="text/javascript"></script>
+<script src="js/touch.js" type="text/javascript"></script>
+<script src="js/fx.js" type="text/javascript"></script>
+<script src="gmu/js/gmu.js" type="text/javascript"></script>
+<script src="gmu/js/event.js" type="text/javascript"></script>
+<script src="gmu/js/parseTpl.js" type="text/javascript"></script>
+<script src="gmu/js/touch.js" type="text/javascript"></script>
+<script src="gmu/js/widget.js" type="text/javascript"></script>
+<script src="gmu/js/highlight.js" type="text/javascript"></script>
+<script src="gmu/js/calendar.js" type="text/javascript"></script>
+<script src="gmu/js/$picker.js" type="text/javascript"></script>
+<script src="gmu/js/matchMedia.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

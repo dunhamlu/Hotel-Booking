@@ -1,0 +1,156 @@
+a{
+    color: #333;
+}
+body {
+    font-family: "Microsoft YaHei";
+    -webkit-tap-highlightcolor: transparent;
+    /*去除在手机上点击时出现的半透明色块*/
+    -webkit-user-select: none;
+    /*禁止用户选中*/
+    -webkit-text-size-adjust: none;
+    /*旋转屏幕时禁止自动调整文字大小*/
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+}
+@media screen and (min-width:320px){
+    html{
+        font-size:62.5%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:413px){
+    html{
+        font-size:72.5%;
+    }
+}
+
+@media screen and (min-width:414px){
+    html{
+        font-size:87.5%;
+    }
+}
+
+.container {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    height: 100%;
+    overflow: hidden;
+}
+.section {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    /*定义iscroll的盒子上一定要定义一个相对定位*/
+}
+.city_head {
+    height: 4rem;
+    position: relative;
+
+}
+.city_head h1{
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 4rem;
+}
+.city_head a {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: url(../img/btn_top_nav_back.png) no-repeat;
+    left: 1rem;
+    top: 1.1rem;
+    background-size: 100% 100%;
+    z-index: 5;
+}
+
+.tipbg {
+    height: 2rem;
+    background: #ebebeb;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 2rem;
+    padding-left: 1rem;
+}
+
+.cur_address {
+    height: 3rem;
+    padding-left: 1.2rem;
+    line-height: 3rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+.cur_address p {
+    border-bottom: 1px solid #DDDCE2;
+}
+.cur_address span {
+    color: #24AEF2;
+}
+.cur_address div {
+    position: absolute;
+    right: 1rem;
+    top: .9rem;
+    width: 15px;
+    height: 15px;
+}
+.cur_address div label {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url(../img/check.png) no-repeat left bottom;
+    background-size: 15px 30px;
+}
+.cur_address div input[type=checkbox] {
+    display: none;
+}
+.cur_address div input[type=checkbox]:checked + label{
+    background-position: left top;
+}
+
+.hot_city {
+    padding: 0.6rem 0;
+}
+.hot_city li {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.more_list {
+    padding: 0 1rem;
+}
+.more_list li {
+    display: inline-block;
+    padding: 0 1.1rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.city_box ul {
+    padding-left: 1rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+.city_box li {
+    border-bottom: 1px solid #DDDCE2;
+    height: 2.6rem;
+
+}
+.city_box li a{
+    display: block;
+    width: 100%;
+    line-height: 2.6rem;
+}

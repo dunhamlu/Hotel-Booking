@@ -1,0 +1,232 @@
+a{
+    text-decoration: none;
+    color: #333;
+}
+body {
+    font-family: "Microsoft YaHei";
+    -webkit-tap-highlightcolor: transparent;
+    /*去除在手机上点击时出现的半透明色块*/
+    -webkit-user-select: none;
+    /*禁止用户选中*/
+    -webkit-text-size-adjust: none;
+    /*旋转屏幕时禁止自动调整文字大小*/
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+}
+@media screen and (min-width:320px) and (max-width: 374px){
+    html{
+        font-size:62.5%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:413px){
+    html{
+        font-size:72.5%;
+    }
+}
+
+@media screen and (min-width:414px){
+    html{
+        font-size:87.5%;
+    }
+}
+.container {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    height: 100%;
+    overflow: hidden;
+}
+
+.section {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+    /*定义iscroll的盒子上一定要定义一个相对定位*/
+}
+
+#picsImg{
+    position: relative;
+}
+#picsImg img{
+    display: block;
+    width: 100%;
+    height: 10rem;
+}
+.content {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    padding-left: 1rem;
+}
+.content ul {
+    -webkit-box-flex: 1;
+    margin-bottom: 3rem;
+}
+.content ul li {
+    width: 100%;
+    height: 6rem;
+    line-height: 6rem;
+    border-bottom: 1px solid #ccc;
+    padding-left: 1.2rem;
+    position: relative;
+}
+.content ul li input[type=text] {
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+}
+.content ul li em {
+    position: absolute;
+    width: 2rem;
+    height: 3.5rem;
+    right: 1.1rem;
+    top: 2rem;
+    background: url(../img/right_arrow.png) no-repeat;
+    background-size: 60%;
+}
+.content ul li label {
+    position: relative;
+    padding: 0 2.5rem 0 1.9rem;
+    color: #999;
+    font-size: 1.4rem;
+}
+.content ul li label:before {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+    background: #e6e6e6;
+    left: 0;
+    top: 4px;
+}
+.content ul li.place {
+    display: -webkit-box;
+    color: #24AEF2;
+    font-size: 1.4rem;
+}
+.content ul li.place div {
+    -webkit-box-flex: 1;
+    position: relative;
+}
+.content ul li.place p {
+    width: 6rem;
+    height: 6rem;
+    border-left: 1px solid #ccc;
+    background: url(../img/icon_address2.png) no-repeat center 1.2rem;
+    background-size: 21px 23px;
+    padding-top: 1.2rem;
+    text-align: center;
+}
+.content ul li.place span {
+    font-size: 1.5rem;
+}
+.content ul li.place a {
+    position: absolute;
+    width: 2rem;
+    height: 3.5rem;
+    right: 1.1rem;
+    top: 2rem;
+    background: url(../img/right_arrow.png) no-repeat;
+    background-size: 60%;
+}
+
+.foot {
+    width: 100%;
+    background: #24AEF2 url(../img/icon-search.png) no-repeat 30% center;
+    background-size: auto 2.4rem;
+    height: 5rem;
+
+}
+.foot a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 1.7rem;
+}
+
+/*遮罩*/
+.ui-id-mark {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+/*加载动画*/
+.ui-id-loading {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    z-index: 9999;
+}
+.ui-id-loading img {
+    width: 60px;
+    height: 60px;
+}
+/*提示框*/
+.ui-dialog {
+    width: 21rem;
+    height: 10rem;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10.5rem;
+    margin-top: -7rem;
+    z-index: 999992001;
+    color: #333;
+    border-radius: 5px;
+}
+
+.tipcontainer {
+    width: 90%;
+    margin: .5rem auto;
+}
+.tipcontainer h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    height: 2rem;
+}
+.tipcontainer .content {
+    text-align: center;
+    line-height: 2rem;
+    height: 3rem;
+    color: #333;
+}
+.tipcontainer p a {
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: .5rem auto;
+}
+
+
+
+
+

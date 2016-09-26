@@ -1,0 +1,508 @@
+a{
+    color: #333;
+    -webkit-box-sizing: border-box;
+}
+body {
+    font-family: "Microsoft YaHei";
+    -webkit-tap-highlightcolor: transparent;
+    /*去除在手机上点击时出现的半透明色块*/
+    -webkit-user-select: none;
+    /*禁止用户选中*/
+    -webkit-text-size-adjust: none;
+    /*旋转屏幕时禁止自动调整文字大小*/
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    position: relative;
+}
+@media screen and (min-width:320px){
+    html{
+        font-size:62.5%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:413px){
+    html{
+        font-size:72.5%;
+    }
+}
+
+@media screen and (min-width:414px){
+    html{
+        font-size:87.5%;
+    }
+}
+.container {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    -webkit-box-orient: vertical;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 列表页 */
+.head_list {
+    height: 45px;
+    width: 100%;
+    /* overflow:hidden; */
+    position: relative;
+    text-align: center;
+    color: #333;
+    line-height: 45px;
+    font-size: 14px;
+}
+.head_list a {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+    background: url(../img/btn_top_nav_back.png) no-repeat;
+    background-size: 50% 50%;
+    text-indent: -9999px;
+}
+
+.cal_list {
+    height: 38px;
+    background: #F5F6F5;
+    border-top: 1px solid #DBDDE3;
+    border-bottom: 1px solid #DBDDE3;
+    position: relative;
+    overflow: hidden;
+    display: -webkit-box;
+    font-size: 1.4rem;
+    line-height: 38px;
+    padding-left: 15px;
+    color: #666;
+}
+.cal_list p {
+    -webkit-box-flex: 1;
+}
+.cal_list h2 {
+    width: 50px;
+    height: 38px;
+    margin-right: 10px;
+    line-height: 38px;
+    color: #24AEF2;
+    font-size: 1.4rem;
+    background: url(../img/calendar_right.png) no-repeat right center;
+    background-size: 8px 15px;
+}
+
+.hotel-box {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    position: relative;
+}
+
+.scroll {
+    width: 100%;
+}
+
+.hotel_list {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-box-orient: vertical;
+}
+
+.rows {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.rows a{
+    display: block;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+}
+.rows dl {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    /*-webkit-box-orient: horizontal;*/
+    padding: 1.2rem 0.5rem;
+}
+.rows dl dt {
+    width: 7rem;
+    height: 7rem;
+}
+.rows dl dt img {
+    display: block;
+    width: 7rem;
+    height: 7rem;
+}
+.rows dl dd {
+    width: 100%;
+    -webkit-box-flex: 1;
+    padding-left: 0.8rem;
+}
+.rows dl dd h2 {
+    font-size: 1.4rem;
+    height: 1.9rem;
+    font-weight: bold;
+}
+.tip {
+    height: 1.9rem;
+}
+.tip span{
+    display: inline-block;
+    color: #ff9a00;
+    font-size: 1.4rem;
+}
+.tip em {
+    display: inline-block;
+    color: #FFF;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 1.4rem;
+    margin-left: .3rem;
+}
+.tip em:nth-child(2) {
+    background: #f68f26;
+}
+.tip em:nth-child(3) {
+    background: #f34bce;
+}
+.tip em:nth-child(4) {
+    background: #13A94E;
+}
+
+.stars {
+    height: 1.9rem;
+}
+.dizhi{
+    font-size: 1rem;
+}
+.rows .aside {
+    width: 6rem;
+    padding: 1rem 1rem 0 0;
+    text-align: right;
+}
+.aside p{
+    padding-top: 38%;
+}
+.aside .price {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #f00;
+    height: 4rem;
+}
+.aside .distance{
+    color: #666;
+    font-size: 1rem;
+}
+
+/*加载更多*/
+.load_more {
+    height: 3.2rem;
+    line-height: 3.2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ccc;
+    display: none;
+}
+.tipbox {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.4rem;
+    display: none;
+}
+
+
+.footnav {
+    background: #fff;
+    width: 100%;
+    height: 0rem;
+    overflow: hidden;
+    border-top: 1px solid #24AEF2;
+    -webkit-backface-visibility: hidden;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.footnav nav {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+}
+.footnav nav a {
+    display: block;
+    -webkit-box-flex: 1;
+    text-align: center;
+    height: 3rem;
+    line-height: 3rem;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #ccc;
+    background-image: url(../img/icon-hui.png);
+    background-position: 85% center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+.footnav nav a:last-child {
+    border-right: none;
+}
+.footnav nav a.cur_item {
+    border-top: 1px solid #24AEF2;
+    background-image: url(../img/icon-blue.png);
+    color: #24AEF2;
+}
+
+.item_layer {
+    width: 100%;
+    overflow-y: scroll;
+    height: 0rem;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+    z-index: 1000000;
+}
+.item_layer div {
+    display: none;
+    overflow-y: auto;
+}
+.item_layer div.cur_layer {
+    display: block;
+}
+.item_layer div li {
+    height: 2.8rem;
+    line-height: 2.8rem;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    padding-left: 10px;
+}
+.item_layer div li span {
+    position: absolute;
+    width: 2.8rem;
+    height: 2.8rem;
+    right: 0rem;
+    top: 0.8rem;
+    background-image: url(../img/icon-active-no.png);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}
+.item_layer div li.on span {
+    background-image: url(../img/icon-active.png);
+}
+
+.hotel_img {
+    height: 15rem;
+}
+.hotel_img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.info_wrap {
+    padding: 1rem 1.2rem;
+}
+.info_wrap ul.base_info {
+    height: 2.7rem;
+    border-radius: 5px;
+    border: 1px solid #24AEF2;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    color: #666;
+    font-size: 1.4rem;
+}
+.info_wrap ul.base_info li {
+    -webkit-box-flex: 1;
+    text-align: center;
+    line-height: 2.7rem;
+}
+.info_wrap ul.base_info li.on {
+    background: #24AEF2;
+    color: #fff;
+}
+
+.content_wrap h2 {
+    font-size: 1.5rem;
+    color: #000;
+    height: 4.3rem;
+    line-height: 4.3rem;
+    font-weight: bold;
+}
+.content_wrap ul li {
+    border-top: 1px solid #ccc;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    padding-left: 2.6rem;
+    color: #727272;
+    background-repeat: no-repeat;
+    background-size: 24px 27px;
+    background-position: 2px 11px;
+}
+.content_wrap ul li:nth-child(1) {
+    background-image: url(../img/icon_collect.png);
+}
+.content_wrap ul li:nth-child(2) {
+    background-image: url(../img/icon_phone.png);
+}
+.content_wrap ul li:nth-child(3) {
+    background-image: url(../img/icon_address.png);
+}
+.content_wrap div {
+    display: none;
+}
+.content_wrap div.cur_info {
+    display: block;
+}
+.content_wrap div section h3 {
+    height: 2.4rem;
+    line-height: 2.4rem;
+}
+.content_wrap div section article {
+    line-height: 1.5;
+    color: #727272;
+    height: 3.2rem;
+    overflow: hidden;
+}
+.content_wrap div section p {
+    height: 2.4rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
+
+.detail_cal {
+    margin-top: -10px;
+}
+
+.detail_row {
+    height: 4rem;
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0.6rem;
+}
+
+.hotel_container {
+    padding: 0 .8rem;
+}
+
+.detail_list dl {
+    display: -webkit-box;
+    -webkit-box-flex: 1;
+    width: 100%;
+    -webkit-box-orient: vertical;
+}
+.detail_list dl dt {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    color: #666;
+}
+.detail_list p {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 1.4rem;
+}
+.detail_list span {
+    display: block;
+    width: 5rem;
+    border: 1px solid #24AEF2;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    border-radius: 5px;
+    margin-top: 9px;
+    text-align: center;
+}
+.detail_list span.full {
+    background: #ccc;
+    border-color: #333;
+    color: #666;
+}
+
+
+/*遮罩*/
+
+.ui-id-mark {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.ui-id-loading {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -30px 0 0 -30px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+.ui-id-loading img {
+    width: 60px;
+    height: 60px;
+}
+
+.ui-dialog {
+    width: 21rem;
+    height: 10rem;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -10.5rem;
+    margin-top: -7rem;
+    z-index: 2001;
+    color: #333;
+    border-radius: 5px;
+}
+
+.tipcontainer {
+    width: 90%;
+    margin: .5rem auto;
+}
+.tipcontainer h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    height: 2rem;
+}
+.tipcontainer .content {
+    text-align: center;
+    line-height: 2rem;
+    height: 3rem;
+    color: #333;
+}
+.tipcontainer p a {
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: .5rem auto;
+}
+
+

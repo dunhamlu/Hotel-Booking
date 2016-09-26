@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="stylesheet" href="../css/reset.css" type="text/css">
+	<link rel="stylesheet" href="../css/login.css" type="text/css">
+</head>
+<body>
+<div class="wrap">
+	<header class="login_title">
+		<h1>会员登录</h1>
+		<a href="javascript:;" class='retruns return' type="login"></a>
+		<a href="#" class='home'></a>
+	</header>
+	<div class="form">
+		<h2><input type="text" placeholder="手机号码" id="phone"></h2>
+		<h2><input type="password" placeholder="登录密码" id="pwd"></h2>
+		<span>忘记密码?</span>
+		<p id="btn">
+			<a href="register.html" id="register">注册</a>
+			<a href="javascript:;" id="login">登陆</a>
+		</p>
+	</div>
+</div>
+
+<script src="../js/zepto.min.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script src="../js/login.js" type="text/javascript"></script>
+<script type="text/javascript">
+	logins.userLogin();
+</script>
+</body>
+</html>

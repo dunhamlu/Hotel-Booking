@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>城市</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="full-screen" content="yes">
+	<link rel="stylesheet" href="../css/reset.css" type="text/css">
+	<link rel="stylesheet" href="../css/city.css" type="text/css">
+</head>
+<body>
+<div class="container">
+	<header class="city_head">
+		<h1>选择城市</h1>
+		<a href="" class="return" id="return"></a>
+	</header>
+	<section class="section" id="container">
+		<div class="scroll">
+			<h2 class="tipbg">当前</h2>
+			<!--<div class="cur_address">
+				<p>北京市海淀区上地三街</p>
+			</div>-->
+			<div class="cur_address">
+				<span id="cur_city"></span>
+				<div>
+					<input type="checkbox" id="check" checked>
+					<label for="check"></label>
+				</div>
+			</div>
+			<div class="tipbg">热门</div>
+			<ul class="hot_city" id="hot_city">
+			</ul>
+			<div class="tipbg">更多</div>
+			<ul class="more_list" id="more_list">
+			</ul>
+			<div class="city_box" id="city_box">
+				<!--<div id="city0">
+					<p class="tipbg">A</p>
+					<ul>
+						<li>
+							<a href=""></a>
+						</li>
+					</ul>
+				</div>-->
+			</div>
+		</div>
+	</section>
+</div>
+<script src="../js/zepto.min.js" type="text/javascript"></script>
+<script src="../js/iscroll.js" type="text/javascript"></script>
+<script src="../js/common.js" type="text/javascript"></script>
+<script src="../js/city.js" type="text/javascript"></script>
+<script src="../js/addCity.js" type="text/javascript"></script>
+</body>
+</html>
